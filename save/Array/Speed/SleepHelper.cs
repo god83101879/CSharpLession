@@ -16,7 +16,7 @@ namespace Speed
             //DateTime startTime = DateTime.Now;
             Console.WriteLine("Program start.");
             sw.Start();
-            SleepHelper.SleepAWhile(rnd.Next(5,10));
+            SleepHelper.SleepAWhile(rnd.Next(5,20));
             sw.Stop();
 
             sw.Reset();

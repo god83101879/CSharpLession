@@ -9,6 +9,11 @@ namespace FileConsole
 {
     class TestFileReader
     {
+        /// <summary>
+        /// 讀取檔案，不存在時回傳空值。
+        /// </summary>
+        /// <param name="path">檔案路徑</param>
+        /// <returns></returns>
         public static string ReadFile(string path)
         {
             if (!File.Exists(path))
@@ -40,6 +45,8 @@ namespace FileConsole
                 Console.ReadLine();
                 return;
             }
+
+            //content = System.Environment.NewLine + content;
 
             string cTime = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
             content = System.Environment.NewLine + "[" + cTime + "]" + content;

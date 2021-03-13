@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A57C7B2C-E5BF-4757-B7B9-809AE3113E8C}</ProjectGuid>
+    <ProjectGuid>{6EA47FF1-9303-4B4A-890A-FE9D901EA783}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FileConsole</RootNamespace>
-    <AssemblyName>FileConsole</AssemblyName>
+    <RootNamespace>hw1</RootNamespace>
+    <AssemblyName>hw1</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,16 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Copior.cs" />
-    <Compile Include="FileWriter.cs" />
-    <Compile Include="FolderReader.cs" />
-    <Compile Include="FUCK.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FileReader.cs" />
-    <Compile Include="TestFileReader.cs" />
-    <Compile Include="testFolder.cs" />
-    <Compile Include="TestFolderReader.cs" />
+    <Compile Include="tool.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

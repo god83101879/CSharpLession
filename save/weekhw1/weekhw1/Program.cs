@@ -16,7 +16,7 @@ namespace hw1
             DateTime startTime = DateTime.Now;
             Console.WriteLine("歡迎進入本系統，是否開始操作? Y/N:");
             YN = Console.ReadLine();
-            do
+            while (YN.ToUpper() == "Y" || YN.ToUpper() == "YES")
             {
                 Console.WriteLine("請輸入操作選項之數字, 1.搬移檔案 2.拷貝檔案 3.讀取檔案 4.刪除檔案 5.建立資料夾 6.刪除資料夾");
                 int ans = int.Parse(Console.ReadLine());
@@ -205,7 +205,8 @@ namespace hw1
                 }
                 Console.WriteLine("是否繼續執行? Y/N:");
                 Console.ReadLine();
-            } while (YN.ToUpper() == "Y" || YN.ToUpper() == "YES");
+                if (YN.ToUpper() == "Y" || YN.ToUpper() == "YES") continue;
+            }
             return;
             DateTime EndTime = DateTime.Now;
             TimeSpan Ts = EndTime - startTime;

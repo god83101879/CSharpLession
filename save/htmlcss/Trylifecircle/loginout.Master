@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="loginout.master.cs" Inherits="Trylifecircle.loginout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+            <asp:PlaceHolder runat="server" ID="plc1">
+                <a href="login.aspx">登入</a>
+            </asp:PlaceHolder>
+            <asp:PlaceHolder runat="server" ID="plc2" Visible="false">
+                <asp:Literal runat="server" ID="ltAccount"></asp:Literal>
+                <asp:Button ID="btnnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click"/>
+            </asp:PlaceHolder>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

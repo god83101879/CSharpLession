@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> My first JQuery demo</title>
+    <script src="Script/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //var func1 = function () {
+            //    $("p").toggle("slow");
+            //}
+            $("#btn1").click(function () {
+                $("p").show("slow");
+            });
+            $("#btn2").click(function () {
+                $("p").hide("slow");
+            });
+            $("#btn3").click(function () {
+                //等同 .append($'<p style="background-color:burlywood;">This is new dom</p>');
+                $("#id1").append('<p style="background-color:burlywood;">哈↗哈↗哈↗哈↗哈↗哈↑哈↑哈↑哈↑哈↑哈↑Peko Peko Peko Peko Peko Peko～！</p>');
+            });
+            $("#btn4").click(function () {
+                var inp1 = $("input[name=inp1]");
+                var text = inp1.val();
+
+                text = text.toUpperCase();
+                inp1.val(text);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button type="button" id="btn1">哈↗哈↗哈↗哈↗哈↗</button>
+    <button type="button" id="btn2">哈↑哈↑哈↑哈↑哈↑哈↑</button>
+    <button type="button" id="btn3">Peko Peko Peko Peko Peko Peko～！</button>
+    <button type="button" id="btn4">HA↑HA↑HA↑HA↑</button>
+
+    <div id="id1">
+        <input name="inp1" type="text">
+        <p style="background-color:burlywood">peko~peko~</p>
+        <p style="background-color:burlywood">peko~peko~</p>
+        <p style="background-color:burlywood">peko~peko~</p>
+    </div>
+
+    <!--<img src="https://img.moegirl.org.cn/common/a/a5/%E5%85%94%E7%94%B0%E4%BD%A9%E5%85%8B%E6%8B%89%E6%8C%82%E4%BB%B6.png" />-->
+
+
+</body>
+</html>

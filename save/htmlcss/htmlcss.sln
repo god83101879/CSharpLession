@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "htmlcss", "htmlcss\htmlcss.csproj", "{8106EE84-6035-4538-B9E7-9483910B97E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trylifecircle", "Trylifecircle\Trylifecircle.csproj", "{5DB4E51C-6B53-4273-B449-917018C1850D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8106EE84-6035-4538-B9E7-9483910B97E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8106EE84-6035-4538-B9E7-9483910B97E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8106EE84-6035-4538-B9E7-9483910B97E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8106EE84-6035-4538-B9E7-9483910B97E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB4E51C-6B53-4273-B449-917018C1850D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB4E51C-6B53-4273-B449-917018C1850D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB4E51C-6B53-4273-B449-917018C1850D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB4E51C-6B53-4273-B449-917018C1850D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9ED8539-55D3-4809-9504-314084C672B9}
+	EndGlobalSection
+EndGlobal

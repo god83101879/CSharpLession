@@ -29,8 +29,7 @@ namespace hw1
                         if (!File.Exists(movefile))                                                   //若無檔案存在則停止
                         {
                             Console.WriteLine($"{movefile} 此路徑檔案不存在");
-                            Console.Read();
-                            return;
+                            break;
                         }
                         Console.Write("請輸入搬移至路徑及檔名:");
                         string targetfile = Console.ReadLine();
@@ -49,7 +48,7 @@ namespace hw1
                                 {
                                     Console.WriteLine("已結束程式");
                                     Console.Read();
-                                    return;
+                                    break;
                                 }
                             }
                         }
@@ -64,7 +63,7 @@ namespace hw1
                         {
                             Console.WriteLine($"程式結束");
                             Console.Read();
-                            return;
+                            break;
                         }
                         DateTime endTime = DateTime.Now;
                         TimeSpan ts = endTime - startTime;
@@ -78,8 +77,7 @@ namespace hw1
                         if (!File.Exists(copyfile))                                                   //若無檔案存在則停止
                         {
                             Console.WriteLine($"{copyfile} 此路徑檔案不存在");
-                            Console.Read();
-                            return;
+                            break;
                         }
                         Console.Write("請輸入複製目標路徑及檔名:");
                         targetfile = Console.ReadLine();
@@ -93,13 +91,11 @@ namespace hw1
                         else if (finalans.ToUpper() == "N" || finalans.ToUpper() == "NO")
                         {
                             Console.WriteLine($"程式結束");
-                            Console.Read();
-                            return;
+                            break;
                         }
                         endTime = DateTime.Now;
                         ts = endTime - startTime;
                         Console.WriteLine($"共花費{ts.TotalSeconds}秒");
-                        Console.ReadLine();
                         break;
                     case 3:
                         startTime = DateTime.Now;
@@ -108,8 +104,7 @@ namespace hw1
                         if (!File.Exists(readfile))                                                   //若無檔案存在則停止
                         {
                             Console.WriteLine($"{readfile} 此路徑檔案不存在");
-                            Console.Read();
-                            return;
+                            break;
                         }
                         Console.Write("確定要讀取檔案? Y(YES)/N(NO):");
                         finalans = Console.ReadLine();
@@ -122,13 +117,11 @@ namespace hw1
                         else if (finalans.ToUpper() == "N" || finalans.ToUpper() == "NO")
                         {
                             Console.WriteLine($"程式結束");
-                            Console.Read();
-                            return;
+                            break;
                         }
                         endTime = DateTime.Now;
                         ts = endTime - startTime;
                         Console.WriteLine($"共花費{ts.TotalSeconds}秒");
-                        Console.Read();
                         break;
                     case 4:
                         startTime = DateTime.Now;
@@ -137,8 +130,7 @@ namespace hw1
                         if (!File.Exists(orderfile))                                                   //若無檔案存在則停止
                         {
                             Console.WriteLine($"{orderfile} 此路徑檔案不存在");
-                            Console.Read();
-                            return;
+                            break;
                         }
                         Console.Write("確定要刪除檔案? Y(YES)/N(NO):");
                         finalans = Console.ReadLine();
@@ -150,13 +142,11 @@ namespace hw1
                         else if (finalans.ToUpper() == "N" || finalans.ToUpper() == "NO")
                         {
                             Console.WriteLine($"程式結束");
-                            Console.Read();
-                            return;
+                            break;
                         }
                         endTime = DateTime.Now;
                         ts = endTime - startTime;
                         Console.WriteLine($"共花費{ts.TotalSeconds}秒");
-                        Console.Read();
                         break;
                     case 5:
                         startTime = DateTime.Now;
@@ -172,13 +162,11 @@ namespace hw1
                         else if (finalans.ToUpper() == "N" || finalans.ToUpper() == "NO")
                         {
                             Console.WriteLine($"程式結束");
-                            Console.Read();
-                            return;
+                            break;
                         }
                         endTime = DateTime.Now;
                         ts = endTime - startTime;
                         Console.WriteLine($"共花費{ts.TotalSeconds}秒");
-                        Console.Read();
                         break;
                     case 6:
                         startTime = DateTime.Now;
@@ -194,16 +182,14 @@ namespace hw1
                         else if (finalans.ToUpper() == "N" || finalans.ToUpper() == "NO")
                         {
                             Console.WriteLine($"程式結束");
-                            Console.Read();
-                            return;
+                            break;
                         }
                         endTime = DateTime.Now;
                         ts = endTime - startTime;
                         Console.WriteLine($"共花費{ts.TotalSeconds}秒");
-                        Console.Read();
                         break;
                 }
-                Console.WriteLine("是否繼續執行? Y/N:");
+                Console.Write("是否繼續執行? Y/N:");
                 Console.ReadLine();
                 if (YN.ToUpper() == "Y" || YN.ToUpper() == "YES") continue;
             }

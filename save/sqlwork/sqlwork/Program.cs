@@ -18,7 +18,7 @@ namespace sqlwork
                 $@" SELECT * FROM TestTable1
                     WHERE NumberCol = @NumberCol 
                     ORDER BY ID DESC;";
-
+            
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
@@ -40,9 +40,13 @@ namespace sqlwork
 
                     reader.Close();
                 }
-                catch (Exception ex)
+                catch (Exception ex) 
                 {
-                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(ex.Message); //每個動作都印出訊息
+                }
+                finally 
+                {
+                    connection.Close(); //全部做完關掉，以防佔記憶體
                 }
             }
         }

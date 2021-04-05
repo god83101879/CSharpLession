@@ -10,7 +10,7 @@ namespace hw1
     class Program
     {
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string YN = "";
             DateTime startTime = DateTime.Now;
@@ -190,13 +190,13 @@ namespace hw1
                         break;
                 }
                 Console.Write("是否繼續執行? Y/N:");
-                Console.ReadLine();
+                YN = Console.ReadLine();
                 if (YN.ToUpper() == "Y" || YN.ToUpper() == "YES") continue;
             }
-            return;
             DateTime EndTime = DateTime.Now;
             TimeSpan Ts = EndTime - startTime;
             Console.WriteLine($"\n已使用本程式共歷時 " + Ts.TotalMilliseconds + " 毫秒.");
+            Console.Read();
         }
     }
 }

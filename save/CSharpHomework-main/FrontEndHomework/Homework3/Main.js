@@ -15,7 +15,7 @@
                 '<td>' +
                 item.Name + "</td><td> " +
                 item.ISBN + "</td><td> " +
-                item.Price + "</td>";
+                item.Price + "</td> $";
 
             newDom.innerHTML = html;
             table1.appendChild(newDom);

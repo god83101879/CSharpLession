@@ -33,12 +33,12 @@
         //    //$("body").append("<p>" + data + "</p>");
         //    $("body").append("<p>" + outputText + "</p>");
         //})
-        .fail(function (xhr, status, errorThrown) {
-            console.log('好油喔，無法完成');
-            console.log('Error:' + errorThrown);
-            console.log('Status:' + status);
-            console.dir(xhr);
-        })
+        //.fail(function (xhr, status, errorThrown) {
+        //    console.log('好油喔，無法完成');
+        //    console.log('Error:' + errorThrown);
+        //    console.log('Status:' + status);
+        //    console.dir(xhr);
+        //})
         .always(function (xhr, status) {
             console.log('要求已完成!');
         })
@@ -51,8 +51,8 @@
     //    //$("body").append("<p>" + data + "</p>");
     //    $("body").append("<p>" + outputText + "</p>");
     //})
-    //.fail(function () {
-    //    console.log("傳輸失敗");
-    //    });
+    .fail(function () {
+        console.log("傳輸失敗");
+        });
     });
 });
